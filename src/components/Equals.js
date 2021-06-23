@@ -13,12 +13,18 @@ const Equals = ({ value }) => {
         if (operator === "➖") {
             const subtractTwo = () => {
                 setResult(parseInt(input) - parseInt(secondInput))
+                setInput("");
+                setSecondInput("");
+                setOperator("")
             }
             subtractTwo();
         }
         if (operator === "➕") {
             const addTwo = () => {
                 setResult(parseInt(input) + parseInt(secondInput))
+                setInput("");
+                setSecondInput("");
+                setOperator("")
 
             }
             addTwo();
@@ -26,6 +32,9 @@ const Equals = ({ value }) => {
         if (operator === "➗") {
             const divide = () => {
                 setResult(parseInt(input) / parseInt(secondInput))
+                setInput("");
+                setSecondInput("");
+                setOperator("")
 
             }
             divide();
@@ -33,6 +42,9 @@ const Equals = ({ value }) => {
         if (operator === "✖️") {
             const multiply = () => {
                 setResult(parseInt(input) * parseInt(secondInput))
+                setInput("");
+                setSecondInput("");
+                setOperator("")
 
             }
             multiply();
