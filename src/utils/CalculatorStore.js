@@ -15,3 +15,4 @@ const CalculatorStore = ({ children }) => {
         </CalculatorContext.Provider>
     )
 }
+export default CalculatorStore;

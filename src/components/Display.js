@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CalculatorContext } from "../utils/CalculatorStore"
 
 const Display = ({ number }) => {
-    console.log(number)
+    const { input, setInput } = useContext(CalculatorContext)
+    console.log(input)
     return (
-        <div>
-            <input type="text" readOnly />
-        </div>
+        <form>
+            <input type="text" readOnly />{input}
+
+        </form>
     )
 }
 
