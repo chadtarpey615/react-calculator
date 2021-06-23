@@ -1,10 +1,17 @@
 import React, { useState, useContext } from 'react'
 import { CalculatorContext } from "../utils/CalculatorStore"
 const Button = ({ value, number }) => {
-    const { input, setInput } = useContext(CalculatorContext)
+    const { input, setInput } = useContext(CalculatorContext);
+    const { secondInput, setSecondInput } = useContext(CalculatorContext);
+
 
     const handleInputClick = (event) => {
-        setInput(event.target.name)
+        if (!input) {
+            setInput(event.target.name)
+
+        } else {
+            setSecondInput(event.target.name)
+        }
     }
     return (
         <>

@@ -26,3 +26,8 @@ header {
 .clear-btn {
   width: 200%;
 }
+
+.form {
+  text-align: center;
+  font-size: 4em;
+}

@@ -12,8 +12,7 @@ import CalculatorStore from "./utils/CalculatorStore"
 import './App.css';
 
 function App() {
-  const [firstNumber, setFirstNumber] = useState("");
-  const [secondNumber, setSecondNumber] = useState(null);
+
 
 
   return (
@@ -25,19 +24,19 @@ function App() {
           <Button name="7" value={7} number={7} />
           <Button value={8} number={8} />
           <Button value={9} number={9} />
-          <Divide />
+          <Divide value={"➗"} />
           <Button value={4} number={4} />
           <Button value={5} number={5} />
           <Button value={6} number={6} />
-          <Multiply />
+          <Multiply value={"✖️"} />
           <Button value={1} number={1} />
           <Button value={2} number={2} />
           <Button value={3} number={3} />
-          <Subtract />
+          <Subtract value={"➖"} />
           <Button value={0} number={0} />
           <Button value={"."} number={"."} />
-          <Add />
-          <Equals />
+          <Add value={"➕"} />
+          <Equals value={"＝"} />
           <ClearButton />
 
         </div>
