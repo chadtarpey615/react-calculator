@@ -2,7 +2,7 @@ import React from 'react'
 
 const ClearButton = () => {
     return (
-        <button>
+        <button className="clear-btn">
             Clear
         </button>
     )

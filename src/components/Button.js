@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 
-const Button = ({ value }) => {
+const Button = ({ value, number }) => {
 
     return (
-        <button>
-            {value}
-        </button>
+        <>
+
+            <button>
+                {value}
+            </button>
+        </>
 
     )
 }

@@ -1,7 +1,28 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+/* .App {
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ align-self:;
+  width: 20%;
+  height: 20%;
   text-align: center;
+} */
+
+.App {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 75px 75px 75px 75px;
+  grid-template-rows: 80px 80px 80px 80px 80px; 
+  column-gap: 10px;
+  row-gap: 5px;
+  font-size: 40px;
+  padding-top: 100px;
 }
 
+header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.clear-btn {
+  width: 200%;
+}
