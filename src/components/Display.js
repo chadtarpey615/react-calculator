@@ -9,14 +9,14 @@ const Display = ({ number }) => {
 
     console.log(input)
     return (
-        <form className="form">
+        <div className="form">
             {input}
             {operator}
             {secondInput}
             <br />
             {result}
 
-        </form>
+        </div>
     )
 }
 

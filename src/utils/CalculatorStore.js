@@ -5,9 +5,9 @@ export const CalculatorContext = React.createContext();
 
 
 const CalculatorStore = ({ children }) => {
-    const [input, setInput] = useState();
-    const [operator, setOperator] = useState();
-    const [secondInput, setSecondInput] = useState();
+    const [input, setInput] = useState("");
+    const [operator, setOperator] = useState("");
+    const [secondInput, setSecondInput] = useState("");
     const [result, setResult] = useState();
     const providerValue = React.useMemo(() => ({
         input, setInput,
