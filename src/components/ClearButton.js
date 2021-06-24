@@ -8,7 +8,7 @@ const ClearButton = () => {
     const { result, setResult } = useContext(CalculatorContext);
 
     const handleClick = () => {
-        setInput("0");
+        setInput("");
         setOperator("");
         setSecondInput("");
         setResult("");

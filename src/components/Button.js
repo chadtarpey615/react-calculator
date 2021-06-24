@@ -5,9 +5,14 @@ const Button = ({ value, number }) => {
     const { input, setInput } = useContext(CalculatorContext);
     const { secondInput, setSecondInput } = useContext(CalculatorContext);
     const { operator, setOperator } = useContext(CalculatorContext);
+    const { result, setResult } = useContext(CalculatorContext);
 
 
     const handleInputClick = (number) => {
+        if (result) {
+            setInput(result)
+
+        }
         if (operator == "") {
             setInput(input + number);
         } else {
