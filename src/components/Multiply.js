@@ -8,7 +8,7 @@ const Multiply = ({ value }) => {
         setOperator(event.target.name)
     }
     return (
-        <button name={value} onClick={handleInputClick}>
+        <button className="oper-btn" name={value} onClick={handleInputClick}>
             {value}
         </button>
     )

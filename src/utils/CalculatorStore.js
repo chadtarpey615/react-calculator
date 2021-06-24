@@ -5,7 +5,7 @@ export const CalculatorContext = React.createContext();
 
 
 const CalculatorStore = ({ children }) => {
-    const [input, setInput] = useState("");
+    const [input, setInput] = useState("0");
     const [operator, setOperator] = useState("");
     const [secondInput, setSecondInput] = useState("");
     const [result, setResult] = useState();

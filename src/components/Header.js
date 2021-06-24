@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
     return (
         <header>
-            <h1>CALCULATOR</h1>
+            <h1>REACT-CALCULATOR</h1>
         </header>
     )
 }

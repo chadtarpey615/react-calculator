@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import { CalculatorContext } from "../utils/CalculatorStore"
-
+// import { operations } from "../utils/functions"
 const Equals = ({ value }) => {
+
     const { input, setInput } = useContext(CalculatorContext);
     const { operator, setOperator } = useContext(CalculatorContext);
     const { secondInput, setSecondInput } = useContext(CalculatorContext);
@@ -31,7 +32,7 @@ const Equals = ({ value }) => {
         }
         if (operator === "➗") {
             const divide = () => {
-                setResult(parseInt(input) / parseInt(secondInput))
+                setResult(parseInt(input).toFixed(2) / parseInt(secondInput).toFixed(2))
                 setInput("");
                 setSecondInput("");
                 setOperator("")
@@ -54,10 +55,10 @@ const Equals = ({ value }) => {
 
 
     return (
-        <button onClick={operations} className="equals">
+        <button data-testid="operations" onClick={operations} className="equals oper-btn">
             {value}
         </button>
     )
 }
 
-export default Equals
+export default Equals;

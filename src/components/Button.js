@@ -13,20 +13,15 @@ const Button = ({ value, number }) => {
         } else {
             setSecondInput(secondInput + number)
         }
-
-
-
     }
     return (
         <>
-
-            <button name={value} onClick={() => {
+            <button className="number-btns" name={value} onClick={() => {
                 handleInputClick(number)
             }}>
                 {value}
             </button>
         </>
-
     )
 }
 

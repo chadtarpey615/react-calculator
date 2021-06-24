@@ -8,7 +8,7 @@ const Add = ({ value }) => {
     }
 
     return (
-        <button name={value} onClick={handleInputClick}>
+        <button className="oper-btn" name={value} onClick={handleInputClick}>
             {value}
         </button>
     )
