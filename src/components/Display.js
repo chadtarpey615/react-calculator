@@ -14,7 +14,7 @@ const Display = ({ number }) => {
             {operator}
             {secondInput}
             {result}
-            {/* {result ? result.toFixed(3) : result} */}
+            {/* {result ? result.toFixed(2) : result} */}
         </div>
     )
 }

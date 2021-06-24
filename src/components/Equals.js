@@ -28,8 +28,8 @@ const Equals = ({ value }) => {
         }
         if (operator === "➕") {
             const addTwo = () => {
-                setResult(parseInt(input) + parseInt(secondInput))
-                setNewResult(parseInt(input) + parseInt(secondInput))
+                setResult(Number(input) + Number(secondInput))
+                setNewResult(Number(input) + Number(secondInput))
                 setInput("");
                 setSecondInput("");
                 setOperator("")
@@ -40,7 +40,7 @@ const Equals = ({ value }) => {
         }
         if (operator === "➗") {
             const divide = () => {
-                setResult(parseInt(input).toFixed(2) / parseInt(secondInput).toFixed(2))
+                setResult(Number(input).toFixed(2) / Number(secondInput).toFixed(2))
                 setInput("");
                 setSecondInput("");
                 setOperator("")
@@ -50,7 +50,7 @@ const Equals = ({ value }) => {
         }
         if (operator === "✖️") {
             const multiply = () => {
-                setResult(parseInt(input) * parseInt(secondInput))
+                setResult(Number(input) * Number(secondInput))
                 setInput("");
                 setSecondInput("");
                 setOperator("")
