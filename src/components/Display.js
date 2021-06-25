@@ -10,7 +10,6 @@ const Display = ({ number }) => {
 
     return (
         <div title="display" className={`${input.length >= 20 ? "long-input" : "display"}`}>
-            {/* {result} */}
             {result}
             {input}
             {operator}
