@@ -3,14 +3,15 @@ import Header from "./components/Header";
 import Display from "./components/Display"
 import Button from "./components/Button";
 import ClearButton from "./components/ClearButton";
-import Divide from "./components/Divide"
-import Multiply from "./components/Multiply"
-import Equals from "./components/Equals"
+import Divide from "./components/Divide";
+import Multiply from "./components/Multiply";
+import Equals from "./components/Equals";
 import Add from "./components/Add";
-import Subtract from "./components/Subtract"
-import { CalculatorContext } from "./utils/CalculatorStore"
+import Subtract from "./components/Subtract";
+import { CalculatorContext } from "./utils/CalculatorStore";
 import './App.css';
-// import { operations } from "./components/Equals"
+
+
 function App() {
   const { input, setInput } = useContext(CalculatorContext);
   const { operator, setOperator } = useContext(CalculatorContext);
@@ -25,43 +26,36 @@ function App() {
         setInput("");
         setSecondInput("");
         setOperator("");
-
-
-
       }
       subtractTwo();
-
-
-
     }
+
     if (operator === "+") {
       const addTwo = () => {
         setResult(Number(input) + Number(secondInput))
         setInput("");
         setSecondInput("");
         setOperator("")
-
-
       }
       addTwo();
     }
+
     if (operator === "/") {
       const divide = () => {
         setResult(Number(input).toFixed(2) / Number(secondInput).toFixed(2))
         setInput("");
         setSecondInput("");
         setOperator("")
-
       }
       divide();
     }
+
     if (operator === "*") {
       const multiply = () => {
         setResult(Number(input) * Number(secondInput))
         setInput("");
         setSecondInput("");
         setOperator("")
-
       }
       multiply();
     }

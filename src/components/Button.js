@@ -14,18 +14,13 @@ const Button = ({ value, number }) => {
         if (result) {
             setInput(result)
             setResult("")
-
         }
-
 
         if (operator === "") {
             setInput(input + number);
         } else {
             setSecondInput(secondInput + number)
         }
-
-
-
     }
     return (
         <>
