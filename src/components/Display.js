@@ -11,7 +11,7 @@ const Display = ({ number }) => {
     return (
         <div title="display" className={`${input.length >= 20 ? "long-input" : "display"}`}>
             {/* {result} */}
-            {result ? result.toFixed(2) : result}
+            {result}
             {input}
             {operator}
             {secondInput}
