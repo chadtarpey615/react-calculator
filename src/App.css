@@ -18,7 +18,7 @@
   column-gap: 10px;
   grid-gap: 15px;
   font-size: 40px;
-  padding-top: 40px;
+  padding-top: 5px;
 }
 
 header {
@@ -27,7 +27,8 @@ header {
 }
 
 .clear-btn {
-  width: 200%;
+  width: 210%;
+  margin-left: 1px;
 }
 
 .display {
@@ -75,6 +76,6 @@ font-size: 1rem;
   grid-template-rows: 70px 70px 70px 70px 70px; 
   column-gap: 7px;
   grid-gap: 7px;
-  padding-bottom: 45px;
+  padding-bottom: 5px;
   }
 }
