@@ -9,12 +9,12 @@ const CalculatorStore = ({ children }) => {
     const [operator, setOperator] = useState("");
     const [secondInput, setSecondInput] = useState("");
     const [result, setResult] = useState();
-    const providerValue = {
+    const providerValue = React.useMemo(() => ({
         input, setInput,
         operator, setOperator,
         secondInput, setSecondInput,
         result, setResult
-    }
+    }), [input, operator, secondInput, result])
 
     return (
         <CalculatorContext.Provider

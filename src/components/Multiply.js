@@ -10,7 +10,7 @@ const Multiply = ({ value, operations }) => {
         setOperator(value)
     }
     return (
-        <button className="oper-btn" name={value} onClick={() => {
+        <button title="multiplyButton" className="oper-btn" name={value} onClick={() => {
             if (secondInput) {
                 operations();
             }

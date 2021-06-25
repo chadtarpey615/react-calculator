@@ -9,13 +9,14 @@ const Display = ({ number }) => {
 
 
     return (
-        <div className="display">
-            {result}
+        <div title="display" className="display">
+            {/* {result} */}
+            {result ? result.toFixed(2) : result}
             {input}
             {operator}
             {secondInput}
 
-            {/* {result ? result.toFixed(2) : result} */}
+
         </div>
     )
 }

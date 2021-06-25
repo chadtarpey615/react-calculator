@@ -10,7 +10,7 @@ const Equals = ({ value, operations }) => {
 
 
     return (
-        <button data-testid="operations" onClick={operations} className="equals oper-btn">
+        <button title="equalsButton" onClick={operations} className="equals oper-btn">
             {value}
         </button>
     )

@@ -7,9 +7,11 @@ import CalculatorStore from "./utils/CalculatorStore"
 
 
 ReactDOM.render(
-  <CalculatorStore>
-    <App />
-  </CalculatorStore>,
+  <React.StrictMode>
+    <CalculatorStore>
+      <App />
+    </CalculatorStore>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

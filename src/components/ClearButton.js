@@ -14,7 +14,7 @@ const ClearButton = () => {
         setResult("");
     }
     return (
-        <button onClick={handleClick} className="clear-btn">
+        <button title="clearButton" onClick={handleClick} className="clear-btn">
             Clear
         </button>
     )

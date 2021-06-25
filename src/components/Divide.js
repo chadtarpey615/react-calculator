@@ -9,7 +9,7 @@ const Divide = ({ value, operations }) => {
         setOperator(value)
     }
     return (
-        <button className="oper-btn" name={value} onClick={() => {
+        <button title="divideButton" className="oper-btn" name={value} onClick={() => {
             if (secondInput) {
                 operations();
             }

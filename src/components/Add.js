@@ -10,7 +10,7 @@ const Add = ({ value, operations }) => {
     }
 
     return (
-        <button className="oper-btn" name={value} onClick={() => {
+        <button title="addButton" className="oper-btn" name={value} onClick={() => {
             if (secondInput) {
                 operations();
 

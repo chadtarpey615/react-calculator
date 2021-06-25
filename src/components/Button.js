@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { CalculatorContext } from "../utils/CalculatorStore"
 
 const Button = ({ value, number }) => {
+
     const { input, setInput } = useContext(CalculatorContext);
     const { secondInput, setSecondInput } = useContext(CalculatorContext);
     const { operator, setOperator } = useContext(CalculatorContext);
@@ -15,6 +16,8 @@ const Button = ({ value, number }) => {
             setResult("")
 
         }
+
+
         if (operator === "") {
             setInput(input + number);
         } else {
@@ -26,7 +29,7 @@ const Button = ({ value, number }) => {
     }
     return (
         <>
-            <button className="number-btns" name={value} onClick={() => {
+            <button title="numberButtons" className={`number-btns`} name={value} onClick={() => {
                 handleInputClick(number)
             }}>
                 {value}

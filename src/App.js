@@ -19,7 +19,7 @@ function App() {
 
   const operations = (event) => {
 
-    if (operator === "➖") {
+    if (operator === "-") {
       const subtractTwo = () => {
         setResult(Number(input) - Number(secondInput))
         setInput("");
@@ -34,7 +34,7 @@ function App() {
 
 
     }
-    if (operator === "➕") {
+    if (operator === "+") {
       const addTwo = () => {
         setResult(Number(input) + Number(secondInput))
         setInput("");
@@ -45,7 +45,7 @@ function App() {
       }
       addTwo();
     }
-    if (operator === "➗") {
+    if (operator === "/") {
       const divide = () => {
         setResult(Number(input).toFixed(2) / Number(secondInput).toFixed(2))
         setInput("");
@@ -55,7 +55,7 @@ function App() {
       }
       divide();
     }
-    if (operator === "✖️") {
+    if (operator === "*") {
       const multiply = () => {
         setResult(Number(input) * Number(secondInput))
         setInput("");
@@ -78,18 +78,18 @@ function App() {
           <Button name="7" value={7} number={7} />
           <Button value={8} number={8} />
           <Button value={9} number={9} />
-          <Divide operations={operations} value={"➗"} />
+          <Divide operations={operations} value={"/"} />
           <Button value={4} number={4} />
           <Button value={5} number={5} />
           <Button value={6} number={6} />
-          <Multiply operations={operations} value={"✖️"} />
+          <Multiply operations={operations} value={"*"} />
           <Button value={1} number={1} />
           <Button value={2} number={2} />
           <Button value={3} number={3} />
-          <Subtract operations={operations} value={"➖"} />
+          <Subtract operations={operations} value={"-"} />
           <Button value={0} number={0} />
           <Button value={"."} number={"."} />
-          <Add operations={operations} value={"➕"} />
+          <Add operations={operations} value={"+"} />
           <Equals operations={operations} value={"＝"} />
           <ClearButton />
 

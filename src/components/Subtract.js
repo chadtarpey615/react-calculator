@@ -10,7 +10,7 @@ const Subtract = ({ value, operations }) => {
         setOperator(value)
     }
     return (
-        <button className="oper-btn" name={value} onClick={() => {
+        <button title="subtractButton" className="oper-btn" name={value} onClick={() => {
             if (secondInput) {
                 operations();
             }
