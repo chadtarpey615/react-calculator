@@ -10,10 +10,11 @@ const Display = ({ number }) => {
 
     return (
         <div className="display">
+            {result}
             {input}
             {operator}
             {secondInput}
-            {result}
+
             {/* {result ? result.toFixed(2) : result} */}
         </div>
     )
