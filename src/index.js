@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CalculatorStore from "./utils/CalculatorStore"
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <CalculatorStore>
     <App />
-  </React.StrictMode>,
+  </CalculatorStore>,
   document.getElementById('root')
 );
 
