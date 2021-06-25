@@ -24,7 +24,8 @@ function App() {
         setResult(Number(input) - Number(secondInput))
         setInput("");
         setSecondInput("");
-        setOperator("")
+        setOperator("");
+
 
 
       }
