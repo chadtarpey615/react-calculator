@@ -4,6 +4,11 @@
   
 }
 
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
 .container {
   max-width: 360px;
   margin: 0 auto;
