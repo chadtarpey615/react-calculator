@@ -9,6 +9,8 @@
   pointer-events: none;
 }
 
+
+
 .container {
   max-width: 360px;
   margin: 0 auto;
@@ -73,6 +75,22 @@ header {
   color: #fff;
 }
 
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 500px ) {
   .container {
     width: 350px;
@@ -99,4 +117,9 @@ font-size: 1rem;
   grid-gap: 7px;
   padding-bottom: 5px;
   }
+
+  .App-logo {
+  height: 14vmin;
+  pointer-events: none;
+}
 }
